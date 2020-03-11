@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+        <title>Meme</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/global.css">
+        <link rel="stylesheet" href="./assets/css/egg.css">
+        
+    </head>
+    <body>
+        
+        <main>
+            <div class="container">
+                
+                <section id="top">
+                    
+                    <h1 class="title">Egg</h1>
+                    
+                    <div class="flow-text" style="margin:3.25rem 0 0 0;">
+                        <p>Click button below for free egg</p>
+                    </div>
+                    
+                    <button class="button large" onclick="loadEgg()">Free egg</button>
+                    
+                    <br>
+                    
+                </section>
+                
+                <section id="eggTime" style="display: none;">
+                        
+                    <div id="eggLoader" style="display: none;">
+                        <center>
+                            <div class="loader"></div>
+                        </center>
+                    </div>
+                    
+                    <div id="video" style="display: none; margin-top:-3.5rem;">
+                        <video id="eggVideo" src="./assets/videos/egg.mp4" autoplay></video>
+                    </div>
+                        
+                </section>
+
+                
+            </div><!-- / container -->
+        </main>
+        
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2020 <a href="./">Egg inc.</a>
+                    <span class="right">
+                        <a href="https://bunnbuns.net" target="_blank">Bunnbuns</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="./assets/js/global.js"></script>
+    </body>
+</html>

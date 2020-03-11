@@ -1,0 +1,40 @@
+:root {
+    /* body */
+    --bodyBg: #ffffff;
+    --bodyColor: #070707;
+    /* links */
+    --linkColor: #d6d384;
+    --linkColorHover: #ddda8a;
+    --linkColorActive: #cbc87c;
+    --linkColorFocus: #c6c378;
+    /* nav */
+    --navBg: #d6d384;
+    --navColor: #ffffff;
+    --navLogoColor: #ffffff;
+    --navLinkBorderColor: #d6d384;
+    --navLinkBg: rgba(214, 211, 132, 0.35);
+    --navLinkBg-Active: #d6d384;
+    --navLinkBgHover: rgba(214, 211, 132, 0.35);
+    --navLinkBgFocus: rgba(214, 211, 132, 0.5);
+    --navLinkColor: #ffffff;
+    /* hr */
+    --hrBorderColor: rgba(0, 0, 0, 0.1);
+    /* button */
+    --buttonBg: #a29c26;
+    --buttonColor: #ffffff;
+    --buttonBgHover: #b2ac2c;
+    --buttonBgActive: #938e25;
+    --buttonBgFocus: #898521;
+    --button-outlineBorderColor: #a29c26;
+    --button-outlineBgHover: rgba(162, 156, 38, 0.12);
+    --button-outlineBgActive: rgba(162, 156, 38, 0.18);
+    --button-outlineBgFocus: rgba(162, 156, 38, 0.22);
+    /* loader */
+    --loaderBg: #a29c26;
+    /* footer */
+    --footerBg: #d6d384;
+    --footerColor: rgba(255, 255, 255, 0.8);
+    --footerLinkColor: rgba(255, 255, 255, 0.8);
+    --footerLinkColorHoverFocus: rgba(255, 255, 255, 0.9);
+    --footer-copyrightBg: rgba(51, 51, 51, 0.08);
+}
