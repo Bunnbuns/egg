@@ -9,7 +9,7 @@ function $(id) { //less typing
 // set devMode to false in production //
 var devMode = false;
 
-var videoLoaded = false;
+var videoElement = $("eggVideo");
 
 function showHide(id, display) {
     $(id)
