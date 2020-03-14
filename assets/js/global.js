@@ -15,22 +15,23 @@ function showHide(id, display){
     $(id).style.display = display;
 }
 
-function giveEgg(){
-    if(videoLoaded){
-        showHide('eggLoader', 'none');
-        showHide('video', 'block');
-        $('eggVideo').play();
-    }else{
-        while(!videoLoaded){
-            if(!videoLoaded){
-                console.log('loading');
-            }else{
-                showHide('eggLoader', 'none');
-                showHide('video', 'block');
-                $('eggVideo').play();
-            }
-        }
-    }
+function loadVideo(){
+     return new Promise(function(resolve){
+         if(videoLoaded){
+             resolve()
+         }else{
+             $('eggVideo').oncanplay = function() {
+                 resolve();
+             };
+         }
+     })
+}
+
+async function giveEgg(){
+    await loadVideo();
+    showHide('eggLoader', 'none');
+    showHide('video', 'block');
+    $('eggVideo').play();
 }
 
 function sendEgg(){
@@ -49,6 +50,7 @@ function loadEgg(){
     showHide('eggLoader', 'block');
     setTimeout(function() { giveEgg(); }, 350);
 }
+
 $('eggVideo').oncanplay = function() {
     videoLoaded = true;
 };
