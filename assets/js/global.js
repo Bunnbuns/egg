@@ -19,10 +19,10 @@ function showHide(id, display) {
 
 function loadVideo() {
     return new Promise(function (resolve) {
-        var b = setInterval(() => {
-            if (VideoElement.readyState >= 3) {
+        var loadInterval = setInterval(() => {
+            if (videoElement.readyState >= 3) {
                 //stop checking every half second
-                clearInterval(b);
+                clearInterval(loadInterval);
                 resolve()
             }
         }, 50);
