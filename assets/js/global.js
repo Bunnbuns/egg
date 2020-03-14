@@ -33,6 +33,14 @@ function giveEgg(){
     }
 }
 
+function sendEgg(){
+    console.log("sharing egg...");
+    navigator.share({
+        text: '🥚 Get a 🆓 egg! 🥚',
+        url: location.href,
+    });
+}
+
 function loadEgg(){
     console.log('giving egg to user');
     showHide('top', 'none');
